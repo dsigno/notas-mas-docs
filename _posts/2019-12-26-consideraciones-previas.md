@@ -28,7 +28,8 @@ La manera más rápida de empezar, donde ni siquiera tendremos que instalar nada
 ## Decisiones antes de arrancar con el sitio
 
 1. Como el contenido del sitio tendrá que ver con un raconto cronológico de mis avances sobre la implementación de Jekyll –un *muy particular* diario–, el formato tipo **blog** puede ser adecuado para arrancar el sitio: la plantilla dede estar orientada a ese uso.
-2. Usar un *fork* de una plantilla ya existente de manera de comenzar a trabajar directamente en GitHub... voy a "inspirarme" en el artículo de WebJeda [How to Create a Beautiful Jekyll Blog?](https://blog.webjeda.com/create-jekyll-blog/), y elegiré una super simple plantilla, llamada  [Emerald theme](http://www.jacoporabolini.com/emerald/). ![fork-jekyll-theme-screenshot-2](../img/fork-jekyll-theme-screenshot-2.jpg)
+2. Usar un *fork* de una plantilla ya existente de manera de comenzar a trabajar directamente en GitHub... voy a "inspirarme" en el artículo de WebJeda [How to Create a Beautiful Jekyll Blog?](https://blog.webjeda.com/create-jekyll-blog/), y elegiré una super simple plantilla, llamada  [Emerald theme](http://www.jacoporabolini.com/emerald/).
+![fork-jekyll-theme-screenshot-2](/notas-mas-docs/img/fork-jekyll-theme-screenshot-2.jpg)
 3. Como no estoy pensando en la opción *User website*, sino ***Project Website*** (ya que la cuenta de usuario **dsigno** la tengo pensada para varias pruebas y desarrollos...), habrá que cuidar de resolver algunos de los problemas que suelen presentarse debido a que el sitio será publicado en realidad a un subdirectorio, del tipo  `http://yourname.github.io/repository-name`, mientras que las plantillas son pensadas normalmente para URLs del tipo  `http://yourusername.github.io`.
 
 ***
