@@ -3,8 +3,6 @@ title: Creación vía fork | Paso a paso
 date: 2019-12-27 10:40:00 -0300
 ---
 
-# Creación vía *fork* | Paso a paso
-
 La bifurcación –*fork*– significa copiar o clonar un repositorio, lo que permite experimentar libremente con los cambios sin afectar el proyecto original.
 Por lo general, la gente bifurca repos para proponer cambios al proyecto original o *usar ese proyecto como punto de partida*. Este último caso es el que nos ocupará de aquí en adelante...
 
