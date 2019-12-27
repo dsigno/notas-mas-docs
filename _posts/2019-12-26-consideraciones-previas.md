@@ -1,10 +1,6 @@
 ---
 title: Consideraciones previas
 ---
-FUENTES:
-
-+ [Build a blog with Jekyll and Github Pages](http://andrewbtran.github.io/JRN-418/class13/jekyll/)
-+ [Smashing Magazine - Build A Blog With Jekyll And GitHub Pages](https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/)
 
 Al empezar a investigar sobre la implementación de sitios usando Jekyll lo primero que impacta es la abrumadora cantidad de información –oficial y no–, tutoriales, videos... 
 
@@ -35,3 +31,9 @@ La manera más rápida de empezar, donde ni siquiera tendremos que instalar nada
 ***
 
 De aquí en más, veremos en la próxima entrada los pasos para implementar la plantilla elegida y los problemas que irán apareciendo al tratar de configurarla...
+
+***
+FUENTES:
+
++ [Build a blog with Jekyll and Github Pages](http://andrewbtran.github.io/JRN-418/class13/jekyll/)
++ [Smashing Magazine - Build A Blog With Jekyll And GitHub Pages](https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/)
