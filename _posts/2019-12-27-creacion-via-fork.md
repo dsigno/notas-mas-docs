@@ -52,9 +52,11 @@ Ejemplo: `https://dsigno.github.io/notas-mas-docs//code-syntax`
 Buscando y leyendo encontré esto en este [*issue*](https://github.com/jekyll/jekyll/issues/332#issuecomment-18952908)
 
 > I finally figured out the trick, if you're looking for a solution with the standard URL for GitHub Pages (`username.github.io/project-name/`). Here's what to do:
+>
 > In `_config.yml`, set the `baseurl` option to `/project-name` -- note the leading slash and the **absence** of a trailing slash.
-Now you'll need to change the way you do links in your templates and posts, in the following two ways:
+> Now you'll need to change the way you do links in your templates and posts, in the following two ways:
 > When referencing JS or CSS files, do it like this: `{{ site.baseurl }}/path/to/css.css` -- note the slash immediately following the variable (just before "path").
+> 
 > When doing permalinks or internal links, do it like this: `{{ site.baseurl }}{{ post.url }}` -- note that there is **no** slash between the two variables.
 > [...]
 > This way you can preview your site locally from the site root on localhost, but when GitHub generates your pages from the gh-pages branch all the URLs will start with `/project-name` and resolve properly.
@@ -68,7 +70,9 @@ Esto implica en mi sitio `baseurl: /notas-mas-docs`  (notar que eliminé el *tra
 La manera que encontré de resolver esta cuestión es dejar el último *setting* para baseurl , pero tuve que rastrear dónde hará falta agregar un *slash* para recuperar las referencias correctas, por ej. en \_includes/head.html cambiar
 
 `<link rel="stylesheet" href="{{ "css/main.css" | prepend: site.baseurl }}">`
+
 a
+
 `<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">`
 
 y lo mismo para solucionar el link al favicon. Por ahora funciona (veremos en local)
@@ -98,3 +102,4 @@ FUENTES:
 
 + [Build a blog with Jekyll and Github Pages](http://andrewbtran.github.io/JRN-418/class13/jekyll/)
 + [Smashing Magazine - Build A Blog With Jekyll And GitHub Pages](https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/)
++ [Jekyll Issues aren't as Bad as You Think](https://blog.webjeda.com/jekyll-issues/)
