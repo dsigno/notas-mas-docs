@@ -1,7 +1,7 @@
 # Site settings
 title: Jekyll 101 | Notas & Docs sobre Jekyll
 description: "Mi aprendizaje sobre Jekyll."
-url: "http://www.jacoporabolini.com/emerald"
+url: "https://dsigno.github.io/notas-mas-docs/"
 author:
   name: "dsigno"
   email: "dsigno4all@gmail.com"
@@ -13,7 +13,7 @@ markdown: kramdown
 source: .
 destination: ./_site
 permalink: /:title
-paginate: 8
+paginate: 5
 paginate_path: /page:num/
 
 # Default values
