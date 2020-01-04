@@ -1,6 +1,7 @@
 ---
 title: Creación vía fork | Paso a paso
 date: 2019-12-27 10:40:00 -0300
+tags: jekyll liquid blogging
 ---
 
 La bifurcación –*fork*– significa copiar o clonar un repositorio, lo que permite experimentar libremente con los cambios sin afectar el proyecto original.
@@ -12,7 +13,7 @@ Por lo general, la gente bifurca repos para proponer cambios al proyecto origina
 + El nombre predeterminado de nuestro nuevo repositorio conviene cambiarlo (yo le puse [notas-mas-docs](https://github.com/dsigno/notas-mas-docs)), y habrá en este punto no confundirse y crear –como en muchos tutoriales se muestra– un nombre asociado a un *User Website*: de estos se permiten **solo uno** por cuenta GitHub.
 + Puede ser un buen momento para cambiar la descripción y URL de website (informativo) que está incluído en la *template* original
 
-Si visitamos la dirección de la subcarpeta donde se verá nuestro sitio, notaremos  que *no se vé* tal como lo esperábamos... las templates, como dijimos, vienen pensadas para trabajar pensando en un *User Website*. 
+Si visitamos la dirección de la subcarpeta donde se verá nuestro sitio, notaremos  que *no se vé* tal como lo esperábamos... las templates, como dijimos, vienen pensadas para trabajar pensando en un *User Website*.
 
 Traduzco lo siguiente:
 
@@ -56,7 +57,7 @@ Buscando y leyendo encontré esto en este [*issue*](https://github.com/jekyll/je
 > In `_config.yml`, set the `baseurl` option to `/project-name` -- note the leading slash and the **absence** of a trailing slash.
 > Now you'll need to change the way you do links in your templates and posts, in the following two ways:
 > When referencing JS or CSS files, do it like this: `{{ site.baseurl }}/path/to/css.css` -- note the slash immediately following the variable (just before "path").
-> 
+>
 > When doing permalinks or internal links, do it like this: `{{ site.baseurl }}{{ post.url }}` -- note that there is **no** slash between the two variables.
 > [...]
 > This way you can preview your site locally from the site root on localhost, but when GitHub generates your pages from the gh-pages branch all the URLs will start with `/project-name` and resolve properly.
@@ -85,7 +86,7 @@ Ya que me metí con \_includes/head.html, aproveché y cambié la fuente a Monts
 
 `<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,700,700i&display=swap" rel="stylesheet">`
 
-También tuve que hacer cambios en \ _sass/typography.scss 
+También tuve que hacer cambios en \ _sass/typography.scss
 
 ## Paso 5
 

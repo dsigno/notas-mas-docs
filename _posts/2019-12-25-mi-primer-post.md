@@ -1,5 +1,6 @@
 ---
 title: Mi Primer Post
+tags: jekyll
 ---
 # Mi primer post...
 Tras algunas semanas de investigar sobre "Static Site Generators" , me decidí arrancar mis primeras pruebas de implementación de sitios web con la opción más previsible: trabajar con Jekyll, y hospedando al mismo en GitHub.
