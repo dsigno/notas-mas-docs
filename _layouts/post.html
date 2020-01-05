@@ -1,13 +1,20 @@
 ---
 layout: default
 ---
+
+<!-- Tags -->
+<ul class="tags">
+  {% for tag in page.tags %}
+    <li><a href="{{ site.baseurl }}/tags#{{ tag }}" class="tag">{{ tag }}</a></li>
+  {% endfor %}
+</ul>
+
 <article id="post-page">
-	<h2>{{ page.title }}</h2>		
+	<h2>{{ page.title }}</h2>
 	<time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">{{ page.date | date_to_string }}</time>
 	<div class="content">
 
 		{{ content }}
-		
+
 	</div>
 </article>
-
